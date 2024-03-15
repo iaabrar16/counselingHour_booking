@@ -1,0 +1,119 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.counseling-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.calendar-container {
+    margin-bottom: 20px;
+}
+
+.month-select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    user-select: none;
+}
+
+.month-mover {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 1.2em;
+}
+
+#monthAndYear {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th {
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: 1px solid #007bff;
+}
+
+td {
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid #dddddd;
+    transition: background-color 0.3s;
+}
+
+td:not(.disabled):hover {
+    background-color: #e0e0e0;
+}
+
+td.disabled {
+    color: #cccccc;
+    cursor: default;
+}
+
+td.selected {
+    background-color: #007bff;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#booking-form input,
+#booking-form button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+}
+
+#booking-form button {
+    background-color: #28a745;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+}
+
+#booked-sessions .session-entry {
+    background: #f8f9fa;
+    border: 1px solid #dddddd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+td.selected {
+    background-color: #007bff; /* Blue background */
+    color: #ffffff; /* White text */
+    font-weight: bold;
+}
+

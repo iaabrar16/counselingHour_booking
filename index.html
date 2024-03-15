@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counseling Hour Booking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Counseling Hours Booking</h1>
+        <img src="Capture.JPG" alt="Counseling Image" class="counseling-image">
+        <div class="calendar-container">
+            <div class="month-select">
+                <button class="month-mover" onclick="changeMonth(-1)">&#10094;</button>
+                <span id="monthAndYear"></span>
+                <button class="month-mover" onclick="changeMonth(1)">&#10095;</button>
+            </div>
+            <table id="calendar">
+                <thead>
+                    <tr>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                </thead>
+                <tbody id="calendar-body"></tbody>
+            </table>
+        </div>
+        <form id="booking-form">
+            <input type="time" id="time"  required>
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="text" id="course" placeholder="Course" required>
+            <input type="text" id="section" placeholder="Section" required>
+            <input type="text" id="topic" placeholder="Topic" required>
+            <button type="submit">Book</button>
+        </form>
+        <div id="booked-sessions">
+            <!-- Booked sessions will be displayed here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
